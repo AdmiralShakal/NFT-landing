@@ -4,7 +4,7 @@
   "main": "public/index.html",
   "author": "Yiinv",
   "scripts": {
-    "build:sass": "node-sass ./src/sass/style.scss css/style.cs",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy:assets": "copyfiles -u 1 ./src/assets/**/* public",
     "copy:js": "copyfiles -u 1 ./src/js/* public",
@@ -16,7 +16,8 @@
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
-    "build": "npm-run-all copy:html build:*"
+    "build": "npm-run-all copy:html build:*",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
@@ -27,8 +28,5 @@
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
     "sass": "^1.54.9"
-  },
-  "devDependencies": {
-    "node-sass": "^7.0.3"
   }
 }
