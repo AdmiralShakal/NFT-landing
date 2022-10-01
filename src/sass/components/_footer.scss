@@ -1,0 +1,141 @@
+.footer {
+  background: #030303 url(../../assets/png/background/footer.svg);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 104px 0 54px;
+}
+
+.footer__top {
+}
+
+.footer__top-inner {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 152px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.footer__logo {
+}
+
+.footer__nav {
+}
+
+.footer__label {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.footer__nav-list,
+.footer__social-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer__nav-item,
+.footer__social-item {
+  opacity: 0.75;
+}
+
+.footer__nav-item:hover,
+.footer__social-item:hover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.footer__socials {
+}
+
+.footer__social-item {
+}
+
+.footer__info {
+}
+
+.footer__adres {
+  max-width: 302px;
+  opacity: 0.75;
+}
+
+.footer__form {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__form-items {
+  display: flex;
+}
+
+.footer__form-input {
+  background: none;
+  width: 100%;
+  color: #fff;
+}
+
+.footer__form hr {
+  height: 1px;
+  margin-top: 10px;
+  background: #fff;
+  opacity: 0.25;
+}
+
+.footer__form-input::placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+.footer__form-btn {
+  width: 26px;
+  height: 18px;
+  background: url(../../assets/png/logos/Mail.svg);
+}
+
+.footer__bottom {
+  margin-top: 110px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__phone::after,
+.footer__mail::after {
+  content: '';
+  background: #fff;
+  height: 2px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer__copy {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  opacity: 0.6;
+}

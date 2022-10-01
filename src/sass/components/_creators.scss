@@ -1,0 +1,67 @@
+.creators {
+  background: #030303 url(../../assets/png/background/creators.png) 50% 50% / cover no-repeat;
+}
+
+.creators .container {
+  max-width: 100%;
+}
+
+.creators__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+}
+
+.creators__heading {
+  text-align: center;
+}
+
+.creators__heading .heading__subtitle {
+  width: 458px;
+}
+
+.creators__runingline-window {
+  width: 100%;
+}
+
+.creators__runingline {
+  display: flex;
+  gap: 25px;
+}
+
+.creators__runingline {
+  position: absolute;
+}
+
+.creators__runingline-col {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: center;
+}
+
+.creators__runingline-item {
+  border-radius: 14px;
+}
+
+.creators__button {
+  padding: 14px 22px;
+}
+
+@keyframes marquee {
+  to {
+    transform: translate(var(--marquee-x, -100%), var(--marquee-y, 0));
+  }
+}
+
+.animate {
+  $this: &;
+  overflow: hidden;
+  & .creators__runingline {
+    animation: marquee var(--marquee-duration, 20s) infinite linear;
+    position: relative;
+    padding-left: 100%;
+    width: max-content;
+  }
+}
